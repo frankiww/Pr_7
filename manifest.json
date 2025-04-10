@@ -1,7 +1,7 @@
 {
     "name": "Заметки",
     "short_name": "PWA",
-    "start_url": "/",
+    "start_url": "/frontend/index.html",
     "display": "standalone",
     "background_color": "#EDF2F4",
     "theme_color": "#2B2D42",
