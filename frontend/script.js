@@ -3,6 +3,14 @@ let editNoteId = null;
 
 document.addEventListener('DOMContentLoaded', () => {
     const offlineNotice = document.getElementById('offline');
+
+    // Проверяем начальный статус сети
+    if (navigator.onLine === false) {
+        offlineNotice.style.display = 'block';
+    } else {
+        offlineNotice.style.display = 'none';
+    }
+
     window.addEventListener('online', () => offlineNotice.style.display = 'none');
     window.addEventListener('offline', () => offlineNotice.style.display = 'block');
 
