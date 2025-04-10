@@ -1,0 +1,102 @@
+body{
+    background-color: #EDF2F4;
+    color: #2B2D42;
+}
+h1{
+
+    margin: 10px auto;
+    text-align: center;
+    padding: 5px;
+    box-shadow: 5px 5px 5px 5px#8D99AE;
+}
+#noteForm{
+   margin: 20px auto;
+   text-align: center;
+}
+
+#note{
+    width: 90%;
+    height: 60px;
+    border-radius: 5px;
+    color: #2B2D42;
+    background-color: #EDF2F4;
+}
+
+#noteName{
+    width: 30%;
+    height: 25px;
+    border-radius: 5px;
+    color: #2B2D42;
+    background-color: #EDF2F4;
+    float: left;
+    margin: 5px 4.8%;
+}
+
+form button{
+    width: 30%;
+    background-color: #2B2D42;
+    color: #EDF2F4;
+    height: 30px;
+    box-shadow: 5px 5px 5px 5px #8D99AE;
+    border-radius: 5px;
+}
+
+.noteCard{
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    margin: 2% 0.5%;
+    padding: 0 0 0 10px;
+    box-shadow: 5px 5px 5px 5px #8D99AE;
+    border-radius: 5px;
+    color: #2B2D42;
+    background-color: #EDF2F4;
+    cursor: pointer;
+    
+}
+.deleteNote
+{
+    grid-column: 2 / span 1;
+    background-color: #2B2D42;
+    color: #EDF2F4;
+    border-radius: 5px;
+    width: 100px;
+
+}
+.content p {
+    overflow-wrap: break-word;
+    word-break: break-all;
+    hyphens: auto;
+}
+.full{
+    display: none;
+    overflow-wrap: break-word;
+    max-width: 90%;
+    white-space: pre-line;
+}
+.noteCard.active .short {
+    display: none;
+}
+.noteCard.active .full {
+    display: block;
+}
+
+#offline{
+    display: none;
+    color: #EDF2F4;
+    margin: 20px auto;
+    text-align: center;
+    background-color: #2B2D42;
+    width: 50%;
+    box-shadow: 5px 5px 5px 5px #8D99AE;
+
+}
+.editNote{
+    background-color: #2B2D42;
+    color: #EDF2F4;
+    border-radius: 5px;
+    width: 20%;
+    margin: 10px 0px;
+    padding: 3px;
+
+
+}
